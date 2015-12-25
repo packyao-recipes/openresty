@@ -5,13 +5,12 @@ version = '1.9.3.2'
 a = {}
 a['name'] = 'openresty'
 a['version'] = version
-a['source'] = 'https://openresty.org/download/ngx_openresty-' + version + '.tar.gz'
-a['type'] = 'http'
 a['license'] = 'Nginx'
 a['commands'] = [
   <<-EOF
   apt-get update
   apt-get -y install wget libreadline-dev libncurses5-dev libpcre3-dev libssl-dev perl make build-essential
+  wget -O source https://openresty.org/download/ngx_openresty-#{version}.tar.gz
   tar xfz source
   cd ngx_openresty-#{version}
   ./configure
