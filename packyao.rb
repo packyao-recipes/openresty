@@ -13,9 +13,7 @@ a['commands'] = [
   wget -O source https://openresty.org/download/ngx_openresty-#{version}.tar.gz
   tar xfz source
   cd ngx_openresty-#{version}
-  ./configure
-  make
-  make install
+  ./configure && make && make install
   wget -O /etc/init.d/openresty https://gist.githubusercontent.com/vdel26/8805927/raw/249f907e465e98ac099437025218a15e55a34b4c/nginx
   chmod 755 /etc/init.d/openresty
   EOF
