@@ -1,11 +1,11 @@
 {
   "name": "openresty",
-  "version": "1.9.3.2",
+  "version": "1.11.2.2",
   "license": "Nginx",
   "commands": [
-    "  apt-get update\n  apt-get -y install wget libreadline-dev libncurses5-dev libpcre3-dev libssl-dev perl make build-essential\n  wget -O source https://openresty.org/download/ngx_openresty-1.9.3.2.tar.gz\n  tar xfz source\n  cd ngx_openresty-1.9.3.2\n  ./configure && make && make install\n  wget -O /etc/init.d/openresty https://gist.githubusercontent.com/vdel26/8805927/raw/249f907e465e98ac099437025218a15e55a34b4c/nginx\n  chmod 755 /etc/init.d/openresty\n"
+    "  apt-get update\n  apt-get -y install wget libreadline-dev libncurses5-dev libpcre3-dev libssl-dev perl make build-essential\n  wget -O source https://openresty.org/download/openresty-1.11.2.2.tar.gz\n  tar xfz source\n  cd ngx_openresty-1.11.2.2\n  ./configure && make && make install\n  wget -O /etc/init.d/openresty https://gist.githubusercontent.com/vdel26/8805927/raw/249f907e465e98ac099437025218a15e55a34b4c/nginx\n  chmod 755 /etc/init.d/openresty\n"
   ],
-  "description": "ngx_openresty is a full-fledged web application server by bundling the standard nginx core, lots of 3rd-party nginx modules, as well as most of their external dependencies.",
+  "description": "openresty is a full-fledged web application server by bundling the standard nginx core, lots of 3rd-party nginx modules, as well as most of their external dependencies.",
   "depends": [
 
   ],
